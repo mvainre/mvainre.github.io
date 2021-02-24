@@ -1,0 +1,22 @@
+name: "maris-vainre"
+output_dir: "."
+navbar:
+  left:
+    - text: "About"
+      href: index.html
+    - text: "Publications"
+      href: publications.html
+    - text: "Talks and workshops"
+      href: talks.html
+    - text: "In media"
+      href: media.html
+output:
+  html_document:
+    theme: lumen
+    highlight: monochrome
+    includes:
+      in_header: header.html
+      after_body: footer.html
+    css: 
+      - styles.css
+      - https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css
