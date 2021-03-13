@@ -10,6 +10,8 @@ navbar:
       href: talks.html
     - text: "In media"
       href: media.html
+    - text: ""
+      href: IGreferences.html
 output:
   html_document:
     theme: lumen
