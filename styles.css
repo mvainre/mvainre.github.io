@@ -27,10 +27,10 @@
   --white: #fff;
   --gray: #999;
   --gray-dark: #333;
-  --primary: #c95485;
+  --primary: #1886B5; /* c95485*/
   --secondary: #EEF1EF;
   --success: #4E6E58;
-  --info: #777DA7;
+  --info: #4E6E59;
   --warning: #F7B32B;
   --danger: #E28413;
   --light: #DEDBD2;
@@ -167,13 +167,13 @@ sup {
 }
 
 a {
-  color: #c95485; 
+  color: #1886B5; 
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #777DA7;
+  color: #8eb19d;
   text-decoration: underline;
 }
 
@@ -2579,7 +2579,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #c95485;
+  background-color: #1886B5;
   border-color: #158cba;
 }
 
@@ -4304,7 +4304,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #c95485;
+  color: #1886B5;
   background-color: #fff;
   border-color: #f0f0f0;
 }
@@ -4386,7 +4386,7 @@ a.dropdown-toggle:hover {
 .navbar-default .navbar-nav:hover, 
 .navbar-default .navbar-nav>li>a:hover, 
 a.navbar-brand:hover {
-  color: #c95485!important; /* navbar link hover */
+  color: #1886B5!important; /* navbar link hover */
   background-color: #14194BFA7;
 }
 
@@ -5249,7 +5249,7 @@ a.badge-primary:focus, a.badge-primary.focus {
 
 .badge-secondary {
   color: #fff;
-  background-color: #c95485;
+  background-color: #1886B5;
 }
 
 a.badge-secondary:hover, a.badge-secondary:focus {
@@ -5646,8 +5646,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #c95485; /* TOC background color */
-  border-color: #c95485;
+  background-color: #1886B5; /* TOC background color */
+  border-color: #1886B5;
 }
 
 .list-group-item + .list-group-item {
@@ -10813,6 +10813,17 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 
 .container-about-child-other {
   /*width: 33%;*/
-  display: flex;
+  /*display: flex;*/
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .container-about-parent, .container-about-child-me, .container-about-child-other {
+    -ms-flex-preferred-size: 0;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
