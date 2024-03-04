@@ -4,8 +4,8 @@ navbar:
   left:
     - text: "About"
       href: index.html
-    - text: "Publications"
-      href: publications.html
+    - text: "Publications (ETIS)"
+      href: https://www.etis.ee/CV/Maris_Vainre/eng/
     - text: "Talks and workshops"
       href: talks.html
     - text: "In media"
